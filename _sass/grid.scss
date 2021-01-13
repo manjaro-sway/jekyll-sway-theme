@@ -1,0 +1,104 @@
+.workspaces {
+  width: 20vw;
+}
+
+.workspaces .element {
+  float: left;
+  height: 100%;
+  width: 35px;
+}
+
+.workspaces .element.home {
+  background-color: $color-accent;
+}
+
+.workspaces .element.link {
+  height: 100%;
+  width: 35px;
+  float: left;
+}
+
+.workspaces img {
+  display: block;
+  height: 15px;
+  width: auto;
+  padding: 10px;
+}
+
+.workspaces i {
+  height: 15px;
+  width: auto;
+  padding: 10px;
+}
+
+.title {
+  width: 60vw;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.icons {
+  width: 20vw;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 35px;
+  background-color: $color-background;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.page-content {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.tile {
+  background-color: $color-background;
+  border-color: $color-accent;
+  border-width: 1px;
+  border-style: solid;
+  opacity: 0.9;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.tile.main.single {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-right: 10px;
+}
+
+.tile::-webkit-scrollbar {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .tile {
+    max-width: 48%;
+    max-height: 40%;
+    min-height: 40%;
+  }
+}
+
+@media (orientation: portrait) {
+  .tile {
+    width: auto;
+    min-width: 95%;
+    max-height: 50%;
+  }
+}

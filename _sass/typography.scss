@@ -1,0 +1,19 @@
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+body {
+  font-family: "RobotoMono Nerd Font","Roboto Mono",Roboto,monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-text;
+}
+
+a {
+  color: $color-highlight;
+}
+
+.title {
+  color: $color-accent;
+  font-weight: bolder;
+}
